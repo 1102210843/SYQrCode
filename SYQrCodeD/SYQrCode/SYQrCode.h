@@ -17,12 +17,6 @@
 /**
  *  生成二维码
  */
-#import "UIImage+SYGenerateQrCode.h"
-
-/**
- *  二维码多样化
- */
-#import "UIImage+SYQrCodeDiversification.h"
-
+#import "SYQrCodeImage.h"
 
 #endif /* SYQrCode_h */

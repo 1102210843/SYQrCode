@@ -57,38 +57,71 @@
     
     NSString *link = @"https://www.baidu.com/link?url=lV1hUtb7iigXGP4d0VcBTUTx4XLopvHysOIU3N3LJvBIWj7MuKzSyU14BAvCkeXgbhDwNpwBEpdUAXmnzeElWa&wd=&eqid=dab5812100009e37000000025731c53d";
     
+    SYQrCodeImageConfig *config = [SYQrCodeImageConfig new];
+    
+    config.link = link;
+    
     switch (_count) {
         case 0:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0];
+            
+            config.size = 500;
             break;
         case 1:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 RGB:@"#ee68ba"];
+            
+            config.rgbValue = @"#ee68ba";
             break;
         case 2:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 insertImage:[UIImage imageNamed:@"backImage"] radius:16];
+            
+            config.centerImage = [UIImage imageNamed:@"backImage"];
+            config.radius = 16;
             break;
         case 3:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 RGB:@"#ee68ba" insertImage:[UIImage imageNamed:@"backImage"] radius:16];
+            
+            config.rgbValue = @"#ee68ba";
+            config.centerImage = [UIImage imageNamed:@"backImage"];
+            config.radius = 16;
             break;
         case 4:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 backgroundImage:[UIImage imageNamed:@"backImage"]];
+            
+            config.backgroundImage = [UIImage imageNamed:@"backImage"];
             break;
         case 5:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 RGB:@"#ee68ba" backgroundImage:[UIImage imageNamed:@"backImage"] insertImage:[UIImage imageNamed:@"backImage"] radius:16];
+            
+            config.rgbValue = @"#ee68ba";
+            config.radius = 16;
+            config.centerImage = [UIImage imageNamed:@"backImage"];
+            config.backgroundImage = [UIImage imageNamed:@"backImage"];
             break;
         case 6:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 fillImage:[UIImage imageNamed:@"形状111"]];
+            
+            config.fillImage = [UIImage imageNamed:@"形状111"];
             break;
         case 7:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 fillImage:[UIImage imageNamed:@"形状222"] color1:@"#1dacea" color2:@"#2d9f7c"];
+            
+            config.fillImage = [UIImage imageNamed:@"形状222"];
+            config.color1 = @"#1dacea";
+            config.color2 = @"#2d9f7c";
             break;
         case 8:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 fillImage:[UIImage imageNamed:@"形状111"] color1:nil color2:nil backgroundImage:[UIImage imageNamed:@"backImage"]];
+            
+            config.fillImage = [UIImage imageNamed:@"形状111"];
+            config.backgroundImage = [UIImage imageNamed:@"backImage"];
             break;
         case 9:
-            image = [UIImage generateImageWithQrCode:link QrCodeImageSize:0 fillImage:[UIImage imageNamed:@"形状222"] color1:@"#d40606" color2:@"#a10acc" backgroundImage:[UIImage imageNamed:@"backImage"] insertImage:[UIImage imageNamed:@"backImage"] radius:16];
+            
+            config.centerImage = [UIImage imageNamed:@"backImage"];
+            config.backgroundImage = [UIImage imageNamed:@"backImage"];
+            config.radius = 16;
+            config.fillImage = [UIImage imageNamed:@"形状222"];
+            config.color1 = @"#d40606";
+            config.color2 = @"#a10acc";
             break;
     }
+    
+    
+    image = [SYQrCodeImage qrCodeImageWithConfigCallback:^SYQrCodeImageConfig *{
+        return config;
+    }];
     
     _count=(_count==9)?0:(_count+1);
     
@@ -109,7 +142,7 @@
         }else if (SYCodeTypeLink == codeType) {
             [[UIApplication sharedApplication]openURL:[NSURL URLWithString:url]];
         }else{
-            
+            NSLog(@"字符串");
         }
     };
     [VC scanning];

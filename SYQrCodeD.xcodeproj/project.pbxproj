@@ -24,12 +24,13 @@
 		A4DF4CAD1CEB312C006276CF /* photoImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DF4C9B1CEB312C006276CF /* photoImage.png */; };
 		A4DF4CAE1CEB312C006276CF /* SYColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DF4C9D1CEB312C006276CF /* SYColorModel.m */; };
 		A4DF4CAF1CEB312C006276CF /* SYQrCodeScanne.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DF4CA01CEB312C006276CF /* SYQrCodeScanne.m */; };
-		A4DF4CB01CEB312C006276CF /* UIImage+SYGenerateQrCode.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DF4CA21CEB312C006276CF /* UIImage+SYGenerateQrCode.m */; };
 		A4DF4CB11CEB312C006276CF /* UIImage+SYQrCodeDiversification.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DF4CA41CEB312C006276CF /* UIImage+SYQrCodeDiversification.m */; };
 		A4DF4CB21CEB312C006276CF /* UIImage+SYRoundImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DF4CA61CEB312C006276CF /* UIImage+SYRoundImage.m */; };
 		A4DF4CB31CEB312C006276CF /* whiteBG.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DF4CA71CEB312C006276CF /* whiteBG.png */; };
 		A4DF4CB41CEB312C006276CF /* 扫描框@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DF4CA81CEB312C006276CF /* 扫描框@2x.png */; };
 		A4DF4CB51CEB312C006276CF /* 扫描线@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4DF4CA91CEB312C006276CF /* 扫描线@2x.png */; };
+		E945D84F1E3CAE26000D2919 /* SYQrCodeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E945D84E1E3CAE26000D2919 /* SYQrCodeImage.m */; };
+		E945D8551E3DF455000D2919 /* SYQrCodeImageConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E945D8541E3DF455000D2919 /* SYQrCodeImageConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +70,6 @@
 		A4DF4C9E1CEB312C006276CF /* SYQrCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYQrCode.h; sourceTree = "<group>"; };
 		A4DF4C9F1CEB312C006276CF /* SYQrCodeScanne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYQrCodeScanne.h; sourceTree = "<group>"; };
 		A4DF4CA01CEB312C006276CF /* SYQrCodeScanne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYQrCodeScanne.m; sourceTree = "<group>"; };
-		A4DF4CA11CEB312C006276CF /* UIImage+SYGenerateQrCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SYGenerateQrCode.h"; sourceTree = "<group>"; };
-		A4DF4CA21CEB312C006276CF /* UIImage+SYGenerateQrCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SYGenerateQrCode.m"; sourceTree = "<group>"; };
 		A4DF4CA31CEB312C006276CF /* UIImage+SYQrCodeDiversification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SYQrCodeDiversification.h"; sourceTree = "<group>"; };
 		A4DF4CA41CEB312C006276CF /* UIImage+SYQrCodeDiversification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SYQrCodeDiversification.m"; sourceTree = "<group>"; };
 		A4DF4CA51CEB312C006276CF /* UIImage+SYRoundImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SYRoundImage.h"; sourceTree = "<group>"; };
@@ -78,6 +77,10 @@
 		A4DF4CA71CEB312C006276CF /* whiteBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteBG.png; sourceTree = "<group>"; };
 		A4DF4CA81CEB312C006276CF /* 扫描框@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描框@2x.png"; sourceTree = "<group>"; };
 		A4DF4CA91CEB312C006276CF /* 扫描线@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扫描线@2x.png"; sourceTree = "<group>"; };
+		E945D84D1E3CAE26000D2919 /* SYQrCodeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYQrCodeImage.h; sourceTree = "<group>"; };
+		E945D84E1E3CAE26000D2919 /* SYQrCodeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYQrCodeImage.m; sourceTree = "<group>"; };
+		E945D8531E3DF455000D2919 /* SYQrCodeImageConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYQrCodeImageConfig.h; sourceTree = "<group>"; };
+		E945D8541E3DF455000D2919 /* SYQrCodeImageConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYQrCodeImageConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +169,10 @@
 				A4DF4C9E1CEB312C006276CF /* SYQrCode.h */,
 				A4DF4C9F1CEB312C006276CF /* SYQrCodeScanne.h */,
 				A4DF4CA01CEB312C006276CF /* SYQrCodeScanne.m */,
-				A4DF4CA11CEB312C006276CF /* UIImage+SYGenerateQrCode.h */,
-				A4DF4CA21CEB312C006276CF /* UIImage+SYGenerateQrCode.m */,
+				E945D8531E3DF455000D2919 /* SYQrCodeImageConfig.h */,
+				E945D8541E3DF455000D2919 /* SYQrCodeImageConfig.m */,
+				E945D84D1E3CAE26000D2919 /* SYQrCodeImage.h */,
+				E945D84E1E3CAE26000D2919 /* SYQrCodeImage.m */,
 				A4DF4CA31CEB312C006276CF /* UIImage+SYQrCodeDiversification.h */,
 				A4DF4CA41CEB312C006276CF /* UIImage+SYQrCodeDiversification.m */,
 				A4DF4CA51CEB312C006276CF /* UIImage+SYRoundImage.h */,
@@ -223,11 +228,12 @@
 		A4DF4C5F1CEB30E6006276CF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = sunyu;
 				TargetAttributes = {
 					A4DF4C661CEB30E6006276CF = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 442GN6Q5NW;
 					};
 					A4DF4C7F1CEB30E6006276CF = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -290,9 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E945D84F1E3CAE26000D2919 /* SYQrCodeImage.m in Sources */,
+				E945D8551E3DF455000D2919 /* SYQrCodeImageConfig.m in Sources */,
 				A4DF4C721CEB30E6006276CF /* ViewController.m in Sources */,
 				A4DF4CAE1CEB312C006276CF /* SYColorModel.m in Sources */,
-				A4DF4CB01CEB312C006276CF /* UIImage+SYGenerateQrCode.m in Sources */,
 				A4DF4CAF1CEB312C006276CF /* SYQrCodeScanne.m in Sources */,
 				A4DF4CB21CEB312C006276CF /* UIImage+SYRoundImage.m in Sources */,
 				A4DF4C6F1CEB30E6006276CF /* AppDelegate.m in Sources */,
@@ -352,8 +359,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -396,8 +405,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -425,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 442GN6Q5NW;
 				INFOPLIST_FILE = SYQrCodeD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyu.SYQrCodeD;
@@ -436,6 +448,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 442GN6Q5NW;
 				INFOPLIST_FILE = SYQrCodeD/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sunyu.SYQrCodeD;

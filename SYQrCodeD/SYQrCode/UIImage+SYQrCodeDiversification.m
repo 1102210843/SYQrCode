@@ -192,7 +192,8 @@ void ProviderReleaseData(void * info, const void * data, size_t size) {
     UIImage * whiteBG = [UIImage imageNamed:@"whiteBG"];
     whiteBG = [UIImage generateRoundedCornersWithImage:whiteBG size:whiteBG.size radius:radius];
     const CGFloat whiteSize = 2.f;
-    CGSize brinkSize = CGSizeMake(originImage.size.width / 5, originImage.size.height / 5);
+    const CGFloat scale = 5.5;
+    CGSize brinkSize = CGSizeMake(originImage.size.width / scale, originImage.size.height / scale);
     CGFloat brinkX = (originImage.size.width - brinkSize.width) * 0.5;
     CGFloat brinkY = (originImage.size.height - brinkSize.height) * 0.5;
     CGSize imageSize = CGSizeMake(brinkSize.width - 2 * whiteSize, brinkSize.height - 2 * whiteSize);

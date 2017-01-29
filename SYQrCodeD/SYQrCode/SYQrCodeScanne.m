@@ -369,7 +369,7 @@
     [animationMove setFromValue:[NSNumber numberWithFloat:0]];
     [animationMove setToValue:[NSNumber numberWithFloat:CGRectGetHeight(centerView.frame)-2.f]];
     animationMove.duration = 3;
-    animationMove.delegate = self;
+    //animationMove.delegate = self;
     animationMove.repeatCount  = OPEN_MAX;
     animationMove.fillMode = kCAFillModeForwards;
     animationMove.removedOnCompletion = NO;
