@@ -35,7 +35,7 @@
  */
 - (void)scanning
 {
-    [[[[UIApplication sharedApplication]keyWindow]rootViewController] presentViewController:self animated:NO completion:nil];
+    [[[[UIApplication sharedApplication]keyWindow]rootViewController] presentViewController:self animated:YES completion:nil];
 }
 
 - (void)onBackClick
@@ -60,7 +60,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self openScanning];
 }
 
