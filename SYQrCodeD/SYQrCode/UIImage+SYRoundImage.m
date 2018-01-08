@@ -20,11 +20,13 @@
     radius = MAX(5.f, radius);
     radius = MIN(10.f, radius);
     
+    UIImage *newImage = [image normalizedImage];
+    
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef context = CGBitmapContextCreate(NULL, width, height, 8, 4 * width, colorSpace, kCGImageAlphaPremultipliedFirst);
     CGRect rect = CGRectMake(0, 0, width, height);
     CGContextBeginPath(context);
-    addRoundRectToPath(context, rect, radius, image.CGImage);
+    addRoundRectToPath(context, rect, radius, newImage.CGImage);
     CGImageRef imageMasked = CGBitmapContextCreateImage(context);
     UIImage * img = [UIImage imageWithCGImage: imageMasked];
     CGContextRelease(context);
@@ -32,6 +34,20 @@
     CGImageRelease(imageMasked);
     
     return img;
+}
+
+
+/**
+ 处理部分图片方向问题
+ */
+- (UIImage *)normalizedImage {
+    if (self.imageOrientation == UIImageOrientationUp) return self;
+    
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, self.scale);
+    [self drawInRect:(CGRect){0, 0, self.size}];
+    UIImage *normalizedImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return normalizedImage;
 }
 
 

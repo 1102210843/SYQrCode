@@ -72,7 +72,8 @@
             break;
         case 2:
             
-            config.centerImage = [UIImage imageNamed:@"backImage"];
+            config.centerImage = [UIImage imageNamed:@"i23711974913021952.jpg"];
+//            config.centerImage = [UIImage imageNamed:@"backImage"];
             config.radius = 16;
             break;
         case 3:
